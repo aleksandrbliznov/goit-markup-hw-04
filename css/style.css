@@ -1,0 +1,455 @@
+:root {
+    --primary-color: #212121;
+    --black-color: #000000;
+    --grey-color: #757575;
+    --blue-color: #2196F3;
+    --white-color: #FFFFFF;
+}
+
+
+body {
+    font-family: 'Roboto',sans-serif;
+    color: #212121;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button {
+    font-family:  inherit;
+}
+img {
+    display: block;
+}
+
+/* Hidden items  */
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+/* Header logo footer logo*/
+
+.logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.logo-blue {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.logo-footer {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    /* identical to box height */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.portfolio:active {
+ color: #000000;
+}
+
+/* Hero / Main / Container */
+
+.container {
+   width: 1200px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.hero {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 200px 0;
+    background-color: #2F303A;
+}
+
+.hero .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+
+.hero-btn {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    padding: 10px 32px;
+    text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    
+}
+
+
+/* Site-nav */
+
+.site-nav {
+    margin-left: 93px;
+    display: flex;
+}
+
+.site-nav-item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.site-nav.link {
+    color: #212121;
+}
+
+.site-nav .link.current {
+    color: #2196F3;
+}
+
+.site-nav a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav-contact > .link:not(:first-child) {
+    margin-left: 50px;
+}
+
+/* Section */
+
+.section {
+    padding: 94px 0 94px 0;
+}
+
+.section .section-title.h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.team .section-title.h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.section .section-title.h3 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.section .benefits-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* Benefits Section  */
+
+.benefits {
+    display: flex;
+}
+
+.benefits-item {
+    width: 270px;
+}
+
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* SERVICE */
+
+.section-service {
+    padding-top: 0;
+}
+
+.section-service .section-title.h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.service-list {
+    display: flex;
+}
+
+.service-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Team */
+
+.team-box {
+    background-color: #f5f4fa;
+}
+
+.team-item-footer {
+    background-color: #fff;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.team .team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team .team-title {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.team-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Buttons */
+
+.btn:hover,
+.btn:focus {
+    background-color: #2196F3;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    color: #212121;
+    background-color: #F5F4FA;
+}
+
+/* Service */
+
+.section .service-title {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+
+.section .service-text {
+   font-size: 16px;
+   line-height: 1.87;
+   letter-spacing: 0.03em;
+   color: #757575;
+}
+
+.serv-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.serv-list-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.serv-list-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.serv-list-item:nth-child(n + 6) {
+    margin-bottom: 0;
+}
+
+.item-footer {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 20px 24px;
+}
+
+/* Buttons class */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+/* Header and Footer contact links */
+
+.header {
+   border-bottom: 1px solid #ececec;
+   min-height: 80px;
+}
+
+.header-flex {
+    display: flex;
+    height: 80px;
+}
+
+.navigation {
+    align-items: center;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+    color: #212121;
+    padding: 10px 0 10px 0;
+    text-decoration: none;
+}
+
+.nav-contact {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.contacts-item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.nav-contact a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 10px 0 10px 0;
+    color: #757575;
+}
+
+.footer-contact a {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.link:hover,
+.link:focus
+    {
+    color: #2196F3;
+
+}
+
+.address {
+    margin-top: 20px;
+}
+
+.address-item:not(:first-child) {
+    margin-top: 9px;
+}
+
+.address a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address.link:hover,
+.address.link:focus {
+    color: #2196F3;
+}
+
+.address .street .link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+}
+
+.address .street {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.address.link {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    ;
+}
