@@ -85,6 +85,22 @@ p {
  color: #000000;
 }
 
+.contacts-icon {
+    margin-right: 10px;
+}
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+}
+
+
+
 /* Hero / Main / Container */
 
 .container {
@@ -155,6 +171,7 @@ p {
 
 .site-nav.link {
     color: #212121;
+    
 }
 
 .site-nav .link.current {
@@ -225,6 +242,62 @@ p {
     margin-right: 30px;
 }
 
+.benefits-item.icon-antenna::before {
+    content: '';
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    background-image: url('../images/icon/antenna.png');
+    background-size: 65,32px 70px contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.benefits-item.icon-clock::before {
+    content: '';
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    background-image: url('../images/icon/clock.png');
+    background-size: 65, 32px 70px contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.benefits-item.icon-diagram::before {
+    content: '';
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    background-image: url('../images/icon/diagram.png');
+    background-size: 65, 32px 70px contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
+.benefits-item.icon-astranaut::before {
+    content: '';
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+
+    background: #F5F4FA;
+    background-image: url('../images/icon/astronaut.png');
+    background-size: 65, 32px 70px contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+
 /* SERVICE */
 
 .section-service {
@@ -291,6 +364,109 @@ p {
 
 .team-item:not(:last-child) {
     margin-right: 30px;
+}
+
+/* TEAM SOCIAL ICON */
+
+.team-social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.team-social-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+}
+
+.team-social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-social-link:hover,
+.team-social-link:focus {
+    background-color: #2196f3;
+    fill: #fff;
+}
+
+.team-social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* CLIENTS */
+
+.clients-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients-list {
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+      padding-bottom: 94px;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #757575;
+    border-radius: 4px;
+    fill: #757575;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid #2196f3;
+    fill: #2196f3;
+}
+
+.logo-1 {
+    width: 45px;
+    height: 50px;
+}
+
+.logo-2 {
+    width: 40px;
+    height: 52px;
+}
+
+.logo-3 {
+    width: 41px;
+    height: 42.6px;
+}
+
+.logo-4 {
+    width: 80px;
+    height: 42px;
+}
+
+.logo-5 {
+    width: 59px;
+    height: 47px;
+}
+
+.logo-6 {
+    width: 88.5px;
+    height: 45.5px;
 }
 
 /* Buttons */
@@ -416,6 +592,7 @@ footer {
 }
 
 .nav-contact a {
+    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -423,6 +600,12 @@ footer {
     text-decoration: none;
     padding: 10px 0 10px 0;
     color: #757575;
+    fill: #757575;
+    
+}
+
+.nav-contact.contact-item {
+    fill: #afb1b8;
 }
 
 .footer-contact a {
@@ -436,6 +619,7 @@ footer {
 .link:focus
     {
     color: #2196F3;
+    fill: #2196F3;
 
 }
 
@@ -476,4 +660,66 @@ footer {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     ;
+}
+
+/* FOOTER SOCIAL ICONS */
+
+.footer-box {
+    margin: 0;
+    pv: 72px;
+   padding-right: 878px;
+  
+}
+
+.footer-box:not(:last-child) {
+    margin-right: 70px;
+}
+
+.footer-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.footer-list {
+    display: flex;
+}
+
+.footer-item {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-item:hover,
+.footer-item:focus {
+    background-color: #2196F3;
+}
+
+.footer-link  {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: #FFFFFF;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
 }
