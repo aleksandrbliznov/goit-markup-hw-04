@@ -403,19 +403,23 @@ p {
 
 /* CLIENTS */
 
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .clients-title {
     font-weight: bold;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .clients-list {
       display: flex;
       justify-content: center;
-      padding-top: 50px;
-      padding-bottom: 94px;
 }
 
 .clients-item:not(:last-child) {
@@ -475,16 +479,16 @@ p {
 .btn:focus {
     background-color: #2196F3;
     cursor: pointer;
+    color: #fff;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn {
-    font-family: Roboto;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 26px;
     text-align: center;
     letter-spacing: 0.03em;
     border: none;
@@ -534,6 +538,14 @@ p {
     border: 1px solid #eee;
     border-top: none;
     padding: 20px 24px;
+}
+
+.serv-list-item:hover,
+.serv-list-item:focus {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Buttons class */
@@ -664,14 +676,18 @@ footer {
 
 /* FOOTER SOCIAL ICONS */
 
+.container.footer-box {
+    display: flex;
+    align-items: baseline;
+    
+}
+
 .footer-box {
-    margin: 0;
-    margin-top: 20px;
-    padding-right: 878px;
+    
   
 }
 
-.footer-box:not(:last-child) {
+.footer-box-div:not(:last-child) {
     margin-right: 70px;
 }
 
@@ -704,9 +720,10 @@ footer {
     margin-right: 10px;
 }
 
-.footer-item:hover,
-.footer-item:focus {
+.footer-link:hover,
+.footer-link:focus {
     background-color: #2196F3;
+    fill: #fff;
 }
 
 .footer-link  {
