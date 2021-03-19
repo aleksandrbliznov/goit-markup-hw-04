@@ -22,11 +22,14 @@ ul {
     padding: 0;
     list-style: none;
 }
+
 button {
     font-family:  inherit;
 }
+
 img {
     display: block;
+    max-width: 100%;
 }
 
 h2,
@@ -432,9 +435,9 @@ p {
     align-items: center;
     width: 170px;
     height: 90px;
-    border: 1px solid #757575;
+    border: 1px solid #AFB1B8;
     border-radius: 4px;
-    fill: #757575;
+    fill: #AFB1B8;
 }
 
 .clients-link:hover,
@@ -514,23 +517,23 @@ p {
    color: #757575;
 }
 
-.serv-list {
-    display: flex;
-    flex-wrap: wrap;
+.serv-container {
     margin-top: 50px;
 }
 
+.serv-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
 .serv-list-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.serv-list-item:nth-child(3n) {
-    margin-right: 0;
-}
-
-.serv-list-item:nth-child(n + 6) {
-    margin-bottom: 0;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .item-footer {
